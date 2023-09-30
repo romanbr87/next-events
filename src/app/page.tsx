@@ -1,6 +1,6 @@
 import React from "react";
 import type { NextPage } from "next";
-import ProductForm from "./ProductForm";
+//import ProductForm from "./components/ProductForm";
 import "bootstrap/dist/css/bootstrap.css";
 
 const IndexPage: NextPage = () => {

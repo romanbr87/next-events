@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { NextPage } from "next";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Form, Button } from "react-bootstrap";
-import { Products } from "./api/server/models/clients/products.schema";
+import { Products } from "../app/schemas/models/clients/products.schema";
 import * as yup from "yup";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const ProductForm: React.FC<void> = () => {
+const ProductForm: NextPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
 
