@@ -1,22 +1,15 @@
+import React from "react";
 import type { NextPage } from "next";
-import { Button, Col, Container, Row } from "react-bootstrap";
-const Home: NextPage = () => {
+import ProductForm from "./ProductForm";
+import "bootstrap/dist/css/bootstrap.css";
+
+const IndexPage: NextPage = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>React Bootstrap NextJS Tutorial</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            aliquid quia optio odit nihil voluptatibus soluta labore earum
-            nostrum doloremque. Sequi laboriosam dicta praesentium, sit
-            aspernatur non molestiae voluptates beatae.
-          </p>
-          <Button>My Button</Button>
-        </Col>
-      </Row>
-    </Container>
+    <div>
+      <h1>Product Form</h1>
+      <ProductForm />
+    </div>
   );
 };
-export default Home;
-1
+
+export default IndexPage;
