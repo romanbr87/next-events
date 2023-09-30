@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 const IndexPage: NextPage = () => {
 
   return (
-    <div>
+    <div className="well">
       <h1>Product Form</h1>
       <ProductForm />
     </div>
